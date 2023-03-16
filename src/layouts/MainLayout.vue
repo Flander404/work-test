@@ -79,6 +79,7 @@ select {
 
 .second-page-inp input {
   width: 204px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   height: 36px;
