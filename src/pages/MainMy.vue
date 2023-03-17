@@ -16,25 +16,51 @@
             <img :src="require('../nimg/Tv.png')" alt="">
             <p>Телевизор LED DEXP <br> H24H7000E</p>
           </div>
-          <div id="id-card" class="my-card">
+          <router-link to="/addtexnik" id="id-card" class="my-card">
             <img class="my-plus" :src="require('../nimg/17.png')" alt="">
-            <p>Добавить</p>
+              <p>Добавить</p>
+          </router-link>
+          <div class="menu">
+            <div class="vb">
+              <router-link to="/home" class="roter">
+                <i class='bx bxs-home'></i>
+                <p>Главная</p>
+              </router-link>
+            </div>
+            <div class="vb">
+              <router-link to="/my" class="roter">
+                <i class='bx bx-desktop'></i>
+                <p class="texnika">Техника</p>
+              </router-link>
+            </div>
+            <div class="vb">
+              <router-link to="/person" class="roter">
+                <i class='bx bxs-phone'></i>
+                <p>Вызов</p>
+              </router-link>
+            </div>
+            <div class="vb">
+              <router-link to="/viz" class="roter">
+                <i class='bx bx-message'></i>
+                <p>Чат</p>
+              </router-link>
+            </div>
+            <div class="vb">
+              <router-link to="/setting" class="roter">
+                <i class='bx bx-cog'></i>
+                <p>Мастера</p>
+              </router-link>
+            </div>
+
           </div>
         </div>
-      </div>
-      <div class="menu">
-        <img :src="require('../nimg/55.png')" alt="">
-        <img :src="require('../nimg/2.png')" alt="">
-        <img :src="require('../nimg/22.png')" alt="">
-        <img :src="require('../nimg/33.png')" alt="">
-        <img :src="require('../nimg/44.png')" alt="">
+
       </div>
     </div>
   </div>
 </template>
 <style scoped>
-
-#id-card{
+#id-card {
   padding-top: 10px;
   width: 148px;
   height: 165px;
@@ -46,19 +72,22 @@
   flex-direction: column;
   text-align: center;
 }
-.my-img{
+
+.my-img {
   position: absolute;
   top: 10px;
   right: 15px;
 }
-#id-card p{
+
+#id-card p {
   font-weight: 700;
-font-size: 8px;
-line-height: 20px;
-color: #333333;
+  font-size: 8px;
+  line-height: 20px;
+  color: #333333;
 }
-.my-card p{
-  
+
+.my-card p {
+
   font-weight: 700;
   font-size: 8px;
   line-height: 10px;
@@ -99,6 +128,7 @@ color: #333333;
 .my {
   width: 100%;
   height: 100vh;
+  margin-top: -50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -124,6 +154,7 @@ color: #333333;
 .menu {
   /* margin-top: 10px; */
   width: 100%;
+  height: 70px;
   position: fixed;
   bottom: 5px;
   left: 0;
@@ -132,5 +163,31 @@ color: #333333;
   align-items: center;
   justify-content: space-around;
   border-top: 0.5px solid rgba(159, 159, 159, 0.6);
+  color: gray;
+  text-align: center;
+  padding-top: 20px;
 }
-</style>
+
+.menu i {
+  font-size: 30px;
+  color: gray;
+}
+
+.menu .vb {
+  width: 28%;
+  padding-top: 10px;
+}
+
+.roter {
+  color: gray;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.vb i:active {
+  color: #ED9700;
+}
+
+.roter:active {
+  color: #ED9700;
+}</style>

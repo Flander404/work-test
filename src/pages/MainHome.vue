@@ -42,18 +42,53 @@
         </div>
       </div>
       <div class="add">
-        <div class="add-btn">
+        <router-link to="/my" class="add-btn">
+
           <img class="btn-tv" :src="require('../nimg/16.png')" alt="">
           <h1>Добавить технику</h1>
           <img class="btn-plus" :src="require('../nimg/17.png')" alt="">
-        </div>
+
+        </router-link>
       </div>
-      <div class="menu">
+      <!-- <div class="menu">
         <img :src="require('../nimg/1.png')" alt="">
         <img :src="require('../nimg/11.png')" alt="">
         <img :src="require('../nimg/22.png')" alt="">
         <img :src="require('../nimg/33.png')" alt="">
         <img :src="require('../nimg/44.png')" alt="">
+      </div> -->
+      <div class="menu">
+        <div class="vb">
+          <router-link to="/home" class="roter">
+            <i class='bx bxs-home'></i>
+            <p>Главная</p>
+          </router-link>
+        </div>
+        <div class="vb">
+          <router-link to="/my" class="roter">
+            <i class='bx bx-desktop'></i>
+            <p class="texnika">Техника</p>
+          </router-link>
+        </div>
+        <div class="vb">
+          <router-link to="/person" class="roter">
+            <i class='bx bxs-phone'></i>
+            <p>Вызов</p>
+          </router-link>
+        </div>
+        <div class="vb">
+          <router-link to="/chat" class="roter">
+            <i class='bx bx-message'></i>
+            <p>Чат</p>
+          </router-link>
+        </div>
+        <div class="vb">
+          <router-link to="/setting" class="roter">
+            <i class='bx bx-cog'></i>
+            <p>Мастера</p>
+          </router-link>
+        </div>
+
       </div>
     </div>
   </div>
@@ -63,6 +98,7 @@
 .menu {
   /* margin-top: 10px; */
   width: 100%;
+  height: 70px;
   position: fixed;
   bottom: 5px;
   left: 0;
@@ -71,6 +107,33 @@
   align-items: center;
   justify-content: space-around;
   border-top: 0.5px solid rgba(159, 159, 159, 0.6);
+  color: gray;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.menu i {
+  font-size: 30px;
+  color: gray;
+}
+
+.menu .vb {
+  width: 28%;
+  padding-top: 10px;
+}
+
+.roter {
+  color: gray;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.vb i:active {
+  color: #ED9700;
+}
+
+.roter:active {
+  color: #ED9700;
 }
 
 .btn-plus {

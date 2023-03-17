@@ -1,37 +1,64 @@
+
 const routes = [
+  {
+    path: '/',
+    component: () => import('pages/MainPage.vue'),
+    children: [
+      { path: '', comments: () => import('pages/IndexPage.vue') },
+      { path: 'send', comments: () => import('pages/MainPageSecond.vue') },
+      { path: 'home', comments: () => import('pages/MainHome.vue') },
+      { path: 'my', comments: () => import('pages/MainMy.vue') },
+    ]
+  },
   {
     // path: '/',
     // component: () => import('../layouts/MainLayout.vue'),
-
-    path: "/about",
-    component: () => import("layouts/MainSms.vue"),
+    
+    path: "/sms",
+    component: () => import("pages/MainSms.vue"),
   },
   {
     path: "/home",
-    component: () => import("layouts/MainHome.vue"),
+    component: () => import("pages/MainHome.vue"),
+  },
+  {
+    path: "/setting",
+    component: () => import("pages/MainSetting.vue"),
   },
   {
     path: "/my",
-    component: () => import("layouts/MainMy.vue"),
+    component: () => import("pages/MainMy.vue"),
   },
   {
     path: "/addtexnik",
-    component: () => import("layouts/MainAddTexnik.vue"),
+    component: () => import("pages/MainAddTexnik.vue"),
+  },
+  {
+    path: "/send",
+    component: () => import("pages/MainPageSecond.vue"),
   },
   {
     path: "/zakaz",
-    component: () => import("layouts/MainZakaz.vue"),
+    component: () => import("pages/MainZakaz.vue"),
   },
   {
     path: "/chek",
-    component: () => import("layouts/MainAddChek.vue"),
+    component: () => import("pages/MainAddChek.vue"),
+  },
+  {
+    path: "/chat",
+    component: () => import("pages/MyChats.vue"),
+  },
+  {
+    path: "/person",
+    component: () => import("pages/MainPerson.vue"),
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
     path: "/",
-    component: () => import("../layouts/MainLayout.vue"),
+    component: () => import("../pages/MainPage.vue"),
   },
 ];
 

@@ -4,7 +4,7 @@
       <div class="add-text">
         <h1>Добавить технику</h1>
         <p>DEXP WM-F610NTMA/WW</p>
-        <img :src="require('../nimg/right.png')" alt="">
+        <router-link to="/addtexnik"><img :src="require('../nimg/right.png')" alt=""></router-link>
       </div>
       <div class="zakaz-img">
         <div class="zakaz-img-border">
@@ -45,30 +45,135 @@
       <div class="zakaz-question">
         <button><img style="margin-right: 5px;" :src="require('../nimg/sms.png')" alt=""> Задать вопрос эксперту</button>
       </div>
-      <div class="add-about-btn">
+      <router-link class="add-about-btn" to="/chek">
         <button>Сохранить</button>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
 
 <style scoped>
-.add-about-btn button{
+#id-card {
+  padding-top: 10px;
+  width: 148px;
+  height: 165px;
+  background: linear-gradient(176.61deg, rgba(237, 151, 0, 0.3) 2.73%, rgba(239, 200, 129, 0.3) 95.26%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.my-img {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+#id-card p {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.my-card p {
+
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 10px;
+  color: #333333;
+  letter-spacing: 0.01em;
+}
+
+.my-card {
+  margin-top: 10px;
+  position: relative;
+  width: 148px;
+  height: 165px;
+  background: linear-gradient(176.61deg, rgba(237, 151, 0, 0.3) 2.73%, rgba(239, 200, 129, 0.3) 95.26%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+
+.my-flex {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-cards {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.my-text {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-text h1 {
+  letter-spacing: 0.01em;
+  color: #000;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.menu {
+  /* margin-top: 10px; */
+  width: 100%;
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 0.5px solid rgba(159, 159, 159, 0.6);
+}
+
+.add-about-btn button {
   background: linear-gradient(176.61deg, #ED9700 2.73%, #EFC881 95.26%);
-box-shadow: 5px 4px 10px rgba(237, 151, 0, 0.3);
-border-radius: 10px;
+  box-shadow: 5px 4px 10px rgba(237, 151, 0, 0.3);
+  border-radius: 10px;
   width: 238px;
   height: 50px;
   border: none;
   cursor: pointer;
 }
-.add-about-btn{
+
+.add-about-btn {
   width: 100%;
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .zakaz-question {
   width: 100%;
   padding-top: 10px;
@@ -79,7 +184,7 @@ border-radius: 10px;
 }
 
 .zakaz-question button {
-  width: 312px;
+  width: 90%;
   height: 44px;
   display: flex;
   align-items: center;
@@ -125,7 +230,7 @@ border-radius: 10px;
 }
 
 .zakaz-about-border {
-  width: 312px;
+  width: 90%;
   height: 157px;
   display: flex;
   align-items: center;

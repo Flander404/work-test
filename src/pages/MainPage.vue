@@ -1,58 +1,26 @@
 <template>
   <div>
-    <div class="second-page">
-      <div class="second-page-flex">
-        <div class="second-page-img">
-          <img :src="require('../nimg/12.png')" alt="" />
-        </div>
-        <div class="second-page-h1">
-          <h3>Авторизация</h3>
-        </div>
-        <div class="second-page-p">
-          <p>
-            Для входа используйте номер <br />
-            своего телефона
-          </p>
-        </div>
-        <div class="second-page-inp">
-          <input maxlength="4" value="" />
-        </div>
+    <div class="first-page">
+      <div class="first-page-img">
+        <img :src="require('../nimg/12.png')" alt="" />
       </div>
-
-      <div class="second-page-btn">
-        <button>Отправить код</button>
+      <div class="first-page-loading">
+        <h5>Загрузка.</h5>
       </div>
     </div>
+    
   </div>
 </template>
 
-<style scoped>
+<style>
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono");
-
-input {
-  display: inline-block;
-  margin: -0.2rem auto;
+select#xyz option {
   border: none;
-  padding: 0;
-  width: 6ch;
-  background: repeating-linear-gradient(90deg,
-      dimgrey 0,
-      dimgrey 1ch,
-      transparent 0,
-      transparent 1.5ch) 0 100%/ 10ch 2px no-repeat;
-  font: 3.2rem "Ubuntu Mono", monospace;
-  letter-spacing: 0.5ch;
-}
-
-input:focus {
-  outline: none;
-  color: dodgerblue;
 }
 
 .second-page-flex {
@@ -82,16 +50,17 @@ select {
   justify-content: space-around;
 }
 
-/* .second-page-inp input {
+.second-page-inp input {
   width: 204px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   height: 36px;
-  background: #F7ECD9;
+  background: #f7ecd9;
   border: none;
   padding-left: 10px;
   color: #000;
-} */
+}
 
 input:focus {
   outline: none;
@@ -202,4 +171,6 @@ input:focus {
 }
 </style>
 
-<script scope="this api replaced by slot-scope in 2.5.0+"></script>
+<script>
+
+</script>

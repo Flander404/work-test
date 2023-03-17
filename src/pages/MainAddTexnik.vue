@@ -3,7 +3,7 @@
     <div class="add">
       <div class="add-text">
         <h1>Добавить технику</h1>
-        <img :src="require('../nimg/right.png')" alt="">
+        <router-link class="add-text-img" to="/my"><img :src="require('../nimg/right.png')" alt=""></router-link>
       </div>
       <div class="add-img">
         <div class="add-img-bor">
@@ -40,9 +40,9 @@
           <input placeholder="Магазин" type="text">
           <input placeholder="Дата покупки" type="date">
         </div>
-        <div class="add-about-btn">
+        <router-link class="add-about-btn" to="/zakaz">
           <button>Сохранить</button>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -212,7 +212,7 @@ button:focus {
   line-height: 20px;
 }
 
-.add-text img {
+.add-text-img {
   position: absolute;
   top: 30px;
   left: 20px;

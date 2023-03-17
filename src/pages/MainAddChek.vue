@@ -4,7 +4,7 @@
       <div class="home-flex">
         <div class="add-text">
           <h1>Добавить технику</h1>
-          <img :src="require('../nimg/right.png')" alt="">
+          <router-link class="add-text-img" to="/zakaz"><img :src="require('../nimg/right.png')" alt=""></router-link>
         </div>
         <div class="add-img-or-p">
           <p>Добавьте фото или ссылку на чек</p>
@@ -147,7 +147,7 @@
   line-height: 20px;
 }
 
-.add-text img {
+.add-text-img {
   position: absolute;
   top: 30px;
   left: 20px;
