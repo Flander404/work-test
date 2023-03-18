@@ -45,7 +45,7 @@
       <div class="zakaz-question">
         <button><img style="margin-right: 5px;" :src="require('../nimg/sms.png')" alt=""> Задать вопрос эксперту</button>
       </div>
-      <router-link class="add-about-btn" to="/chek">
+      <router-link class="add-about-btn" to="/addchek">
         <button>Сохранить</button>
       </router-link>
     </div>

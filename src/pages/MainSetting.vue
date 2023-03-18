@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="h1-no-4">
-            <i class='bx bx-left-arrow-alt'></i>
+            
+                <router-link to="/profile"><i class='bx bx-left-arrow-alt'></i></router-link>
             <h1>Заказ №2323434</h1>
             <input type="radio">
         </div>
@@ -60,16 +61,19 @@ p {
 
 .pla-01 {
     margin-top: -20px !important;
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
-
+.pla-01 p{
+    line-height: 25px;
+}
 .pla-01 p span {
     color: gray;
 }
 
 .oplatit button {
     width: 187px;
+    margin-top: 20px;
     height: 34px;
     border: none;
     background: linear-gradient(180deg, rgba(239, 200, 129, 0.7) 15.85%, rgba(245, 184, 73, 0.7) 100%);
@@ -85,12 +89,13 @@ p {
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
-
+    margin-bottom:20px;
 }
 
 
 .rightdv {
     border: 1px solid #EFC881;
+    margin-top: 20px;
     width: 90%;
     height: 44px;
     padding-left: 20px;

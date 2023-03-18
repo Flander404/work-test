@@ -5,9 +5,7 @@
         <div class="panel-text">
           <h5>Главная</h5>
         </div>
-        <div class="panel-img">
-          <img :src="require('../nimg/14.png')" alt="">
-        </div>
+        <router-link class="panel-img" to="profile"><img :src="require('../nimg/14.png')" alt=""></router-link>
       </div>
       <div class="zakaz">
         <div class="zakaz-border">
@@ -71,7 +69,7 @@
           </router-link>
         </div>
         <div class="vb">
-          <router-link to="/person" class="roter">
+          <router-link to="/viz" class="roter">
             <i class='bx bxs-phone'></i>
             <p>Вызов</p>
           </router-link>
@@ -83,7 +81,7 @@
           </router-link>
         </div>
         <div class="vb">
-          <router-link to="/setting" class="roter">
+          <router-link to="/master" class="roter">
             <i class='bx bx-cog'></i>
             <p>Мастера</p>
           </router-link>
@@ -161,9 +159,9 @@
 }
 
 .add-btn {
-  width: 80%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 90%;
+  padding-top: 7px;
+  padding-bottom: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,7 +195,7 @@
 }
 
 .href-master {
-  width: 80%;
+  width: 90%;
   padding-top: 5px;
   padding-left: 30px;
   display: flex;
@@ -255,7 +253,7 @@
 }
 
 .zakaz-border {
-  width: 80%;
+  width: 90%;
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
@@ -304,7 +302,7 @@
   font-size: 14px;
   color: #333333;
   line-height:
-    20px;
+    15px;
   font-weight: 400;
 }
 

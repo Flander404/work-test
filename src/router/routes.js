@@ -8,12 +8,13 @@ const routes = [
       { path: 'send', comments: () => import('pages/MainPageSecond.vue') },
       { path: 'home', comments: () => import('pages/MainHome.vue') },
       { path: 'my', comments: () => import('pages/MainMy.vue') },
+      
     ]
   },
   {
     // path: '/',
     // component: () => import('../layouts/MainLayout.vue'),
-    
+
     path: "/sms",
     component: () => import("pages/MainSms.vue"),
   },
@@ -42,7 +43,7 @@ const routes = [
     component: () => import("pages/MainZakaz.vue"),
   },
   {
-    path: "/chek",
+    path: "/addchek",
     component: () => import("pages/MainAddChek.vue"),
   },
   {
@@ -53,6 +54,41 @@ const routes = [
     path: "/person",
     component: () => import("pages/MainPerson.vue"),
   },
+  {
+    path: "/profile",
+    component: () => import("pages/MainProfil.vue"),
+  },
+  {
+    path: "/order",
+    component: () => import("pages/MyOrder.vue"),
+  },
+  {
+    path: "/setting",
+    component: () => import("pages/MainSetting.vue"),
+  },
+  {
+    path: "/viz",
+    component: () => import("pages/MenuViz.vue"),
+  },
+  {
+    path: "/chek",
+    component: () => import("pages/MainChek.vue"),
+  },
+  {
+    path: "/shildik",
+    component: () => import("pages/MainShildik.vue"),
+  },
+  {
+    path: "/about",
+    component: () => import("pages/MasterAbout.vue"),
+  },
+  {
+    path: "/master",
+    component: () => import("pages/MainMaster2.vue"),
+  },
+
+
+
 
   // Always leave this as last one,
   // but you can also remove it

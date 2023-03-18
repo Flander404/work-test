@@ -3,27 +3,20 @@
     <div class="home">
       <div class="home-flex">
         <div class="add-text">
-          <h1>Добавить чек</h1>
-          <router-link class="add-text-img" to="/zakaz"><img :src="require('../nimg/right.png')" alt=""></router-link>
+          <h1>Добавить гарантию</h1>
+          <router-link class="add-text-img" to="/chek"><img :src="require('../nimg/right.png')" alt=""></router-link>
         </div>
         <div class="add-img-or-p">
-          <p>Добавьте фото или ссылку на чек</p>
+          <p>Добавьте фото гарантийных документов и Вам не <br> придется беспокоиться за их сохранность</p>
         </div>
         <div class="chek-img">
           <div class="chek-img-border">
             <img :src="require('../nimg/17.png')" alt="">
-            <p>Добавить фото чека</p>
-          </div>
-        </div>
-        <div class="chek-link">
-          <div class="chek-link-border">
-            <img :src="require('../nimg/link.png')" alt="">
-            <p>Ссылка на чек</p>
+            <p>Добавить фото</p>
           </div>
         </div>
       </div>
-
-      <router-link class="add-about-btn" to="/chek"><button>Сохранить</button></router-link>
+      <router-link class="add-about-btn" to="#"><button>Сохранить</button></router-link>
     </div>
   </div>
 </template>
@@ -135,8 +128,9 @@
 .add-img-or-p p {
   color: #9F9F9F;
   font-weight: 500;
+  text-align: center;
   font-size: 14px;
-  line-height: 0px;
+  line-height: 20px;
   letter-spacing: 0.01em;
 }
 

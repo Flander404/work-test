@@ -35,7 +35,7 @@
               </router-link>
             </div>
             <div class="vb">
-              <router-link to="/person" class="roter">
+              <router-link to="/viz" class="roter">
                 <i class='bx bxs-phone'></i>
                 <p>Вызов</p>
               </router-link>
@@ -47,7 +47,7 @@
               </router-link>
             </div>
             <div class="vb">
-              <router-link to="/setting" class="roter">
+              <router-link to="/master" class="roter">
                 <i class='bx bx-cog'></i>
                 <p>Мастера</p>
               </router-link>
